@@ -1,4 +1,5 @@
 var BigInteger = require('bigi');
+var Buffer = require('buffer').Buffer;
 var {
   Point, getCurveByName
 } = require('ecurve');
