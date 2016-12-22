@@ -7,7 +7,7 @@ var assert = require('assert');
 var hash = require('./hash');
 var PublicKey = require('./PublicKey');
 var deepEqual = require("deep-equal");
-
+var Buffer = require('buffer').Buffer
 var {G, n} = secp256k1;
 
 class PrivateKey {
