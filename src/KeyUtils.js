@@ -3,7 +3,6 @@ var PrivateKey = require('./PrivateKey');
 var PublicKey = require('./PublicKey');
 var Address = require('./address');
 var Aes = require('./aes');
-var Buffer = require('buffer').Buffer;
 var hash = require('./hash');
 // var dictionary = require('./dictionary_en');
 var secureRandom = require('secure-random');
