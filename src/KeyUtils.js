@@ -94,7 +94,7 @@ module.exports = key = {
       hash_array.push(entropy);
 
       // Hashing for 1 second may helps the computer is not low on entropy (this method may be called back-to-back).
-      hash_array.push(secureRandom.randomBuffer(32));
+//       hash_array.push(secureRandom.randomBuffer(32));
 
       return hash.sha256(Buffer.concat(hash_array));
     },
