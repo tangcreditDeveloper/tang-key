@@ -5,7 +5,7 @@ var encBase64 = require("crypto-js/enc-base64");
 var assert = require("assert");
 var {Long} = require("bytebuffer");
 var hash = require('./hash');
-
+var Buffer = require('buffer').Buffer;
 /** Provides symetric encrypt and decrypt via AES. */
 class Aes {
 
