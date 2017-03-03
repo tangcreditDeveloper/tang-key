@@ -1,13 +1,61 @@
 {
-  "name": "tang-key",
-  "description": "Private Key, Public Key, Cryptographic Signature, AES, Encryption / Decryption",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "tang-key@git+https://github.com/tangcreditDeveloper/tang-key.git",
+        "scope": null,
+        "escapedName": "tang-key",
+        "name": "tang-key",
+        "rawSpec": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+        "spec": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:tangcreditDeveloper/tang-key.git",
+          "sshUrl": "git+ssh://git@github.com/tangcreditDeveloper/tang-key.git",
+          "httpsUrl": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+          "gitUrl": "git://github.com/tangcreditDeveloper/tang-key.git",
+          "shortcut": "github:tangcreditDeveloper/tang-key",
+          "directUrl": "https://raw.githubusercontent.com/tangcreditDeveloper/tang-key/master/package.json"
+        }
+      },
+      "D:\\TangChain_fe"
+    ]
+  ],
+  "_from": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+  "_id": "tang-key@1.0.0",
+  "_inCache": true,
+  "_location": "/tang-key",
+  "_phantomChildren": {
+    "base-x": "2.0.2"
   },
+  "_requested": {
+    "raw": "tang-key@git+https://github.com/tangcreditDeveloper/tang-key.git",
+    "scope": null,
+    "escapedName": "tang-key",
+    "name": "tang-key",
+    "rawSpec": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+    "spec": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:tangcreditDeveloper/tang-key.git",
+      "sshUrl": "git+ssh://git@github.com/tangcreditDeveloper/tang-key.git",
+      "httpsUrl": "git+https://github.com/tangcreditDeveloper/tang-key.git",
+      "gitUrl": "git://github.com/tangcreditDeveloper/tang-key.git",
+      "shortcut": "github:tangcreditDeveloper/tang-key",
+      "directUrl": "https://raw.githubusercontent.com/tangcreditDeveloper/tang-key/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/tangcreditDeveloper/tang-key.git#2f2e4dcecedb4b65f5ffc6984dd376ac8ea654ee",
+  "_shasum": "fc27302c05b0c6de0323237685591d77ee25b7c2",
+  "_shrinkwrap": null,
+  "_spec": "tang-key@git+https://github.com/tangcreditDeveloper/tang-key.git",
+  "_where": "D:\\TangChain_fe",
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "bs58": "^4.0.0",
     "bytebuffer": "^5.0.1",
@@ -17,5 +65,18 @@
     "deep-equal": "^1.0.1",
     "ecurve": "^1.0.4",
     "secure-random": "^1.1.1"
-  }
+  },
+  "description": "Private Key, Public Key, Cryptographic Signature, AES, Encryption / Decryption",
+  "devDependencies": {},
+  "gitHead": "2f2e4dcecedb4b65f5ffc6984dd376ac8ea654ee",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "tang-key",
+  "optionalDependencies": {},
+  "readme": "## js生成公私钥\r\n\r\n\r\n# 特别注意react-native中的package.json\r\n\r\n\"create-hash\": \"git+https://github.com/tangcreditDeveloper/createHash.git\",\r\n\"create-hmac\": \"git+https://github.com/tangcreditDeveloper/createHmac.git\",\r\n",
+  "readmeFilename": "readme.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
