@@ -26,9 +26,7 @@
   "_id": "tang-key@1.0.0",
   "_inCache": true,
   "_location": "/tang-key",
-  "_phantomChildren": {
-    "base-x": "2.0.2"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "tang-key@git+https://github.com/tangcreditDeveloper/tang-key.git",
     "scope": null,
@@ -50,8 +48,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git+https://github.com/tangcreditDeveloper/tang-key.git#2f2e4dcecedb4b65f5ffc6984dd376ac8ea654ee",
-  "_shasum": "fc27302c05b0c6de0323237685591d77ee25b7c2",
+  "_resolved": "git+https://github.com/tangcreditDeveloper/tang-key.git#0c694f8680220e6b12d5ec9279a5565652af299d",
+  "_shasum": "7f595d1cf382b2ce17b85fc854aa4ac56aff3e17",
   "_shrinkwrap": null,
   "_spec": "tang-key@git+https://github.com/tangcreditDeveloper/tang-key.git",
   "_where": "D:\\TangChain_fe",
@@ -68,7 +66,7 @@
   },
   "description": "Private Key, Public Key, Cryptographic Signature, AES, Encryption / Decryption",
   "devDependencies": {},
-  "gitHead": "2f2e4dcecedb4b65f5ffc6984dd376ac8ea654ee",
+  "gitHead": "0c694f8680220e6b12d5ec9279a5565652af299d",
   "license": "ISC",
   "main": "index.js",
   "name": "tang-key",

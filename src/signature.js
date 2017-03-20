@@ -5,6 +5,7 @@ var secp256k1 = getCurveByName('secp256k1');
 var assert = require('assert');
 var BigInteger = require('bigi');
 var PublicKey = require('./PublicKey');
+var Buffer = require('buffer').Buffer;
 
 class Signature {
 
@@ -144,6 +145,8 @@ class Signature {
     verifyHex(hex, public_key) {
         var buf;
         buf = new Buffer(hex, 'hex');
+        console.log("【hex】",hex);
+        console.log("【hex】",buf);
         return this.verifyBuffer(buf, public_key);
     };
 

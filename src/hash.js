@@ -1,6 +1,6 @@
 var createHash = require("create-hash");
 var createHmac = require("create-hmac");
-
+var Buffer = require('buffer').Buffer;
 /** @arg {string|Buffer} data
     @arg {string} [digest = null] - 'hex', 'binary' or 'base64'
     @return {string|Buffer} - Buffer when digest is null, or string

@@ -1,3 +1,4 @@
+var Buffer = require('buffer').Buffer;
 module.exports = function enforce(type, value) { // Copied from https://github.com/bitcoinjs/bitcoinjs-lib
   switch (type) {
     case 'Array': {
@@ -26,7 +27,8 @@ module.exports = function enforce(type, value) { // Copied from https://github.c
     }
 
     default: {
-      if (getName(value.constructor) === getName(type)) return
+      if (getName(value.constructor) === getName(type))
+      return
     }
   }
 

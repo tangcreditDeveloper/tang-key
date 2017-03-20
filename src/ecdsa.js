@@ -4,13 +4,12 @@ var enforceType = require('./enforce_types')
 
 var BigInteger = require('bigi')
 var ECSignature = require('./ecsignature')
-
+var Buffer = require('buffer').Buffer;
 // https://tools.ietf.org/html/rfc6979#section-3.2
 function deterministicGenerateK(curve, hash, d, checkSig, nonce) {
-  
   enforceType('Buffer', hash)
   enforceType(BigInteger, d)
-  
+
   if (nonce) {
     hash = crypto.sha256(Buffer.concat([hash, new Buffer(nonce)]))
   }
@@ -54,7 +53,7 @@ function deterministicGenerateK(curve, hash, d, checkSig, nonce) {
     // Step H1/H2a, again, ignored as tlen === qlen (256 bit)
     // Step H2b again
     v = crypto.HmacSHA256(v, k)
-    
+
     T = BigInteger.fromBuffer(v)
   }
 
@@ -63,24 +62,24 @@ function deterministicGenerateK(curve, hash, d, checkSig, nonce) {
 }
 
 function sign(curve, hash, d, nonce) {
-  
+
   var e = BigInteger.fromBuffer(hash)
   var n = curve.n
   var G = curve.G
-  
+
   var r, s
   var k = deterministicGenerateK(curve, hash, d, function (k) {
     // find canonically valid signature
     var Q = G.multiply(k)
-    
+
     if (curve.isInfinity(Q)) return false
-    
+
     r = Q.affineX.mod(n)
     if (r.signum() === 0) return false
-    
+
     s = k.modInverse(n).multiply(e.add(d.multiply(r))).mod(n)
     if (s.signum() === 0) return false
-    
+
     return true
   }, nonce)
 
@@ -124,7 +123,7 @@ function verifyRaw(curve, e, signature, Q) {
 
   // 1.4.7 Set v = xR mod n
   var v = xR.mod(n)
-  
+
   // 1.4.8 If v = r, output "valid", and if v != r, output "invalid"
   return v.equals(r)
 }

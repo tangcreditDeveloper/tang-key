@@ -2,6 +2,7 @@ var assert = require('assert') // from https://github.com/bitcoinjs/bitcoinjs-li
 var enforceType = require('./enforce_types')
 
 var BigInteger = require('bigi')
+var Buffer = require('buffer').Buffer;
 
 function ECSignature(r, s) {
   enforceType(BigInteger, r)
