@@ -94,6 +94,7 @@ class PublicKey {
       @return PublicKey
   */
   static fromStringOrThrow(public_key, address_prefix) {
+    address_prefix="TSL"
     var prefix = public_key.slice(0, address_prefix.length);
     assert.equal(
       address_prefix, prefix,
